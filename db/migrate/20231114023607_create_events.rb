@@ -7,7 +7,6 @@ class CreateEvents < ActiveRecord::Migration[7.0]
       t.string :artist_name
       t.string :seat_number
       t.text :memo
-      t.references :user, foreign_key: true
       t.boolean :is_public
 
       t.timestamps
